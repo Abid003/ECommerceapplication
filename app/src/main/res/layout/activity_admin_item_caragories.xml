@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinkLite"
+
+    tools:context=".Admin.AdminItemCaragories">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <Button
+            android:id="@+id/catagoryOthers"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttons"
+            android:text="Others"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/piaj_ada_rosun"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/piaj_ada_rosun"
+            app:layout_constraintTop_toBottomOf="@+id/piaj_ada_rosun" />
+
+        <Button
+            android:id="@+id/catagoryTel"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttons"
+            android:text="তেল"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/catagoryMosla"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/catagoryMosla"
+            app:layout_constraintTop_toBottomOf="@+id/catagoryMosla" />
+
+        <Button
+            android:id="@+id/piaj_ada_rosun"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttons"
+            android:text="পিঁয়াজ/ আদা/ রসুন"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/catagoryTel"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/catagoryTel"
+            app:layout_constraintTop_toBottomOf="@+id/catagoryTel" />
+
+        <Button
+            android:id="@+id/catagoryMosla"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttons"
+            android:text="মসলা"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/catagoryDal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/catagoryDal"
+            app:layout_constraintTop_toBottomOf="@+id/catagoryDal" />
+
+        <Button
+            android:id="@+id/catagoryDal"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttons"
+            android:text="ডাল"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/mangso"
+            app:layout_constraintStart_toStartOf="@+id/mangso"
+            app:layout_constraintTop_toBottomOf="@+id/mangso" />
+
+        <Button
+            android:id="@+id/mangso"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttons"
+            android:text="মাংস"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Catagories"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/view_orders"
+            android:layout_width="341dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttons"
+            android:text="View new orders"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/catagoryOthers"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/catagoryOthers"
+            app:layout_constraintTop_toBottomOf="@+id/catagoryOthers" />
+
+        <Button
+            android:id="@+id/maintain_products"
+            android:layout_width="341dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttons"
+            android:text="Maintain products"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view_orders"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view_orders"
+            app:layout_constraintTop_toBottomOf="@+id/view_orders" />
+
+        <Button
+            android:id="@+id/logut_btn"
+            android:layout_width="133dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttons"
+            android:text="Admin logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/maintain_products"
+            app:layout_constraintStart_toStartOf="@+id/maintain_products"
+            app:layout_constraintTop_toBottomOf="@+id/maintain_products"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

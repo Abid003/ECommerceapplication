@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/pink">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:id="@+id/close_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:layout_marginStart="22dp"
+              android:layout_marginLeft="22dp"
+              android:layout_marginTop="14dp"
+              android:text="Close"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:id="@+id/update_textview"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+
+              android:layout_alignParentTop="true"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentBottom="true"
+              android:layout_marginTop="14dp"
+              android:layout_marginEnd="22dp"
+              android:layout_marginRight="22dp"
+              android:layout_marginBottom="9dp"
+              android:text="Update"
+              android:textColor="@color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+      </RelativeLayout>
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="14dp"
+            android:text="update"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_setting"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/appbar_setting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="@+id/appbar_setting"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_setting" />
+
+    <TextView
+        android:id="@+id/profiel_change_btn"
+        android:layout_width="209dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/editTextName"
+        android:layout_below="@+id/profile_image_setting"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="Add profile picture"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image_setting"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/profile_image_setting"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_setting" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="36dp"
+
+        android:background="@drawable/input_style"
+        android:hint="full name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/profiel_change_btn"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/profiel_change_btn"
+        app:layout_constraintTop_toBottomOf="@+id/profiel_change_btn" />
+
+    <EditText
+        android:id="@+id/editTextpgoneNumber"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:hint="mobile number"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAdress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdress" />
+
+    <EditText
+        android:id="@+id/editTextAdress"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:hint="address"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <Button
+        android:id="@+id/sequrity_Q_btn"
+        android:layout_width="195dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/buttons"
+        android:text="Set sequrity question"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextpgoneNumber"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="@+id/editTextpgoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextpgoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
